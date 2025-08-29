@@ -1,1 +1,47 @@
+# I. Check if number is even or odd
+def even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(even_odd(5))  # Odd
+
+
+# II. Largest of three numbers
+def largest_of_three(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= c:
+        return b
+    else:
+        return c
+
+print(largest_of_three(5, 8, 3))  # 8
+
+
+# III. Age category
+def age_category(age):
+    if age < 13:
+        return "Child"
+    elif age <= 19:
+        return "Teen"
+    else:
+        return "Adult"
+
+print(age_category(15))  # Teen
+
+
+# IV. Triangle type (equilateral, isosceles, scalene)
+def triangle_type(a, b, c):
+    if a == b == c:
+        return "Equilateral"
+    elif a == b or b == c or a == c:
+        return "Isosceles"
+    else:
+        return "Scalene"
+
+print(triangle_type(3, 3, 3))  # Equilateral
+print(triangle_type(3, 4, 3))  # Isosceles
+print(triangle_type(3, 4, 5))  # Scalene
 
